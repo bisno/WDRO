@@ -6,7 +6,7 @@ The implementation on Towards Scalable and Fast Distributionally Robust Optimiza
 
 We formalize the learning problem with the supremum of a family of  *subgroup-level* loss functions. Subgroup loss is the cost function of partitioned uncertainty set. Then we implement the maximum of subgroup loss as the objective function and update model parameters by reweighting the descent direction, calculated from a differentiable objective function:
 
-<img src="imgs/intro.pdf" width="428"/>
+<img src="imgs/intro.png" width="428"/>
 
 
 
@@ -29,7 +29,7 @@ A regression example. A toy dataset contains four subgroups.
 python WDRO_for_toydata.py
 ```
 
-<img src="imgs/coli.pdf" width="428"/>
+<img src="imgs/co.png" width="428"/>
 
 
 
