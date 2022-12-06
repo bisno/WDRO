@@ -124,7 +124,6 @@ for i in range(300):
 
 wWDRO,bWDRO = sess.run(w)[0], sess.run(b)
 
-
 tf.reset_default_graph()
 
 x2 = np.zeros((1515,1))
