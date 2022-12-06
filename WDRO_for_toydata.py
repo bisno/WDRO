@@ -51,7 +51,7 @@ z2_grad = tf.gradients(ys=z2,xs=w)
 z1_grad_b = tf.gradients(ys=z1,xs=b)
 z2_grad_b = tf.gradients(ys=z2,xs=b)
 
-# MER = []
+# WDRO = []
 # MSE = []
 
 sess = tf.Session()
@@ -120,9 +120,9 @@ for i in range(300):
     
     
     cost11 = sess.run(z)
-    print("epoch =",i+1,", MER =",cost11,", stepsize =",t)
+    print("epoch =",i+1,", WDRO =",cost11,", stepsize =",t)
 
-wMER,bMER = sess.run(w)[0], sess.run(b)
+wWDRO,bWDRO = sess.run(w)[0], sess.run(b)
 
 
 tf.reset_default_graph()
@@ -163,7 +163,7 @@ with tf.Session() as sess:
 
         cost_max = np.max([cost_n,cost_p])
         
-        print("epoch =",i+1,", loss =",cosss, "MER = ",cost_max)
+        print("epoch =",i+1,", loss =",cosss, "WDRO = ",cost_max)
 
     wout,bout = sess.run(W),sess.run(b)
 
@@ -179,7 +179,7 @@ plt.scatter(group2_x,group2_y,s=10)
 plt.title('Linear Regression Example',fontdict={'weight':'normal','size': 20})
 
 plt.plot([-0.4,3],[-0.4*wout[0] + bout, 3*wout[0] + bout],linewidth=1.0,color='coral',linestyle='-')
-plt.plot([-0.4,3],[-0.4*wMER+bMER, 3*wMER+bMER],linewidth=1.0,color='#4682B4',linestyle='-')
+plt.plot([-0.4,3],[-0.4*wWDRO+bWDRO, 3*wWDRO+bWDRO],linewidth=1.0,color='#4682B4',linestyle='-')
 plt.legend(['AvgLoss','MaxLoss'],fontsize=20)
 plt.tick_params(labelsize=16)
-plt.savefig('./outcome/regression_MER_compare.png', dpi=300)
+plt.savefig('./outcome/regression_WDRO_compare.png', dpi=300)
