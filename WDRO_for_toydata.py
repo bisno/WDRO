@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# Author xuli.shen
 
 import tensorflow as tf
 import numpy as np
