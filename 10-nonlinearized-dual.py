@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+# Author xuli.shen
 
 import tensorflow as tf
 import tensorflow.contrib.slim as slim
