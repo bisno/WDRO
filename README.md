@@ -1,5 +1,5 @@
 
-<center><img src="imgs/logo.svg" width="320"/>
+<center><img src="imgs/logo.svg" width="250"/>
 
 # WDRO
 The implementation on Towards Scalable and Fast Distributionally Robust Optimization for Data-Driven Deep Learning.
