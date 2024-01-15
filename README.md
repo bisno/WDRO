@@ -1,7 +1,7 @@
 
 <center><img src="imgs/logo.svg" width="250"/>
 
-# WDRO（UniDT优化算法）
+# WDRO（UniDT鲁棒优化算法）
 The implementation on Towards Scalable and Fast Distributionally Robust Optimization for Data-Driven Deep Learning.
 
 ****
