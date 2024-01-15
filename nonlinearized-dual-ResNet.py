@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-
-
+# Author xuli.shen
 
 import tensorflow as tf
 from ResNets.ResNet_minimax import network
